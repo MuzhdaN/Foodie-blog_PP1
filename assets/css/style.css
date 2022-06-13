@@ -81,5 +81,62 @@ span{
     background-clip: text;
     text-fill-color: transparent;
     text-transform: uppercase;
+}
 
+/* about me section */
+#about-me{
+    /* height: 40vh;
+    width: 100%;
+    background-color: #10CFFC;
+    margin: 3rem;
+    padding: 2rem; */
+    background-color: #eee;
+    height: 50vh;
+    width: 80%;
+    display: block;
+    padding: 40px 40px;
+    margin: auto;
+    margin-top: 3rem;
+}
+/* 
+.about-me-text, 
+.about-me-image{
+    height: 30vh;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    right: 80%;
+} */
+
+.about-me-text{
+    float:left;
+    font-size: 20px;
+    /* line-height: 1rem;
+    text-align: center; */
+
+    width: 55%;
+}
+
+.about-me-image{
+    /* background-image: url('../image/about-me-image.png');
+    background-size: contain;
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+    float:right;
+    width: 40%;
+}
+
+.about-me-image 
+img{
+    width: 100%;
+    height: auto;
+}
+
+.about-me-text
+.title{
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: center;
+    padding: 1rem;
 }
