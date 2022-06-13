@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* navbar and log */
+header{
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 4px groove;
+    height: 70px;
+    /* height: 100vh;
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../image/hero-pic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    
+}
+#logo, nav{
+    line-height: 40px;
+    display: inline-block;
+}
+nav{
+    float: right;
+    margin-right: 3rem;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 28px 5px;
+}
+li a{
+    /* padding: 25px 10px; */
+    margin: 2rem 1.5rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+li a:hover{
+    text-transform: uppercase;
+}
+
+#logo{
+    margin: -1.5rem;
+}
+
+/* hero section  */
+.hero-image{
+    height: 90vh;
+    width: 100%;
+    background-image: url('../image/hero-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.hero-text{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 800;
+}
+span{
+    position: absolute;
+    right: 60%;
+    transform: translate(65%, 110%);
+    line-height: 56px;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 56px;
+    background: linear-gradient(266.52deg, #F174FC 57.51%, #10CFFC 78.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-transform: uppercase;
+
+}
