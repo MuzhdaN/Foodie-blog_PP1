@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: aquamarine;
+} */
+
+logo{
+    float: left;
+    
+}
+nav{
+    overflow: hidden;
+    width: auto;
+}
+ul{
+    /* width: 100%;
+    margin: 0 0 0 250px; */
+    list-style: none;
+    margin-right: 4.5rem;
+}
+
+nav li{
+    float: right;
+}
+
+li a{
+    display: block;
+    padding: 25px 1.5rem;
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+li a:hover{
+    text-transform: uppercase;
+}
