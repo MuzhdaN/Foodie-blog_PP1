@@ -85,11 +85,6 @@ span{
 
 /* about me section */
 #about-me{
-    /* height: 40vh;
-    width: 100%;
-    background-color: #10CFFC;
-    margin: 3rem;
-    padding: 2rem; */
     background-color: #eee;
     height: 50vh;
     width: 80%;
@@ -98,31 +93,14 @@ span{
     margin: auto;
     margin-top: 3rem;
 }
-/* 
-.about-me-text, 
-.about-me-image{
-    height: 30vh;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    right: 80%;
-} */
 
 .about-me-text{
     float:left;
     font-size: 20px;
-    /* line-height: 1rem;
-    text-align: center; */
-
     width: 55%;
 }
 
 .about-me-image{
-    /* background-image: url('../image/about-me-image.png');
-    background-size: contain;
-    background-repeat: no-repeat; */
-    /* background-position: center; */
     float:right;
     width: 40%;
 }
@@ -205,7 +183,47 @@ p{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: capitalize;
 }
-.button:hover{
+.button:hover {
     background: rgba(0, 194, 255, 0.8);
     font-size: 17px;
 }
+
+footer {
+    height: 20px;
+    background-color: rgb(135, 136, 141);
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+}
+
+ul > li {
+    display: inline;
+}
+.icons i {
+    font-size: 100%;
+}
+
+.icons 
+i:hover {
+    font-size: 140%;
+    color: #fff;
+}
+/* .fa-facebook:hover {
+    color: #4267B2;
+}
+
+.fa-instagram:hover {
+    color: #fccc63;
+  }
+
+.fa-pinterest:hover {
+    color: #fc0228;
+} */
+  
+.copyright-text {
+    font-size: small;
+}
+
