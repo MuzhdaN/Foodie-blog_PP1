@@ -99,42 +99,48 @@ span {
     text-transform: uppercase;
 }
 
-
 /* about me section */
-#about-me{
+#about-me {
     background-color: #eee;
-    height: 50vh;
     width: 80%;
-    display: block;
     padding: 40px 40px;
     margin: auto;
     margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.about-me-text{
-    float:left;
-    font-size: 20px;
+.about-me-text {
+    font-size: 1rem;
     width: 55%;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.about-me-image{
-    float:right;
+.about-me-text
+.title {
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;  
+}
+
+.about-me-image {
+    height: auto;
     width: 40%;
+    margin: auto;
 }
 
 .about-me-image 
-img{
+img {
     width: 100%;
     height: auto;
 }
 
-.about-me-text
-.title{
-    text-transform: capitalize;
-    font-size: 25px;
-    text-align: center;
-    padding: 1rem;
-}
 
 /* recipe section */
 
@@ -246,6 +252,7 @@ i:hover {
   
       /* media queries */
 
+/* navigation and hero section */
   @media (max-width: 858px){
     .checkbtn{
       display: block;
@@ -281,4 +288,26 @@ i:hover {
     .hero span{
         font-size: 2.3rem;
     }
+}
+
+/* about me */
+@media screen and (max-width: 600px){
+    #about-me {
+        background-color: #eee;
+        flex-direction: column-reverse;
+        padding: 10px 0;
+        margin: auto;
+        margin: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-me-text {
+        width: 80%;
+        margin-top: 0.5rem;
+    }
+    .about-me-text
+    .title {
+        font-size: 20px;
+    }
+
 }
