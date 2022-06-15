@@ -6,7 +6,7 @@
 
 /* navbar and log */
 header{
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     /* border-bottom: 4px groove; */
     height: 65px;
@@ -211,35 +211,43 @@ p{
     font-size: 17px;
 }
 
+
 footer {
-    height: 20px;
-    background-color: rgb(135, 136, 141);
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: space-between;
-    text-align: center;
-    padding: 1rem;
-    color: #fff;
+    height: 30px;
 }
 
-ul > li {
+.icons {
+    text-align: center;
+}
+
+.icons > li {
     display: inline;
 }
+
 .icons i {
-    font-size: 100%;
+    font-size: 110%;
+    margin: 0.5%;
+    padding: 0.5%;
+    color: #3a3a3a;
 }
 
-.icons 
-i:hover {
-    font-size: 140%;
-    color: #fff;
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-pinterest:hover {
+    font-size: 130%;
+    font-weight: bold;
 }
-  
-.copyright-text {
-    font-size: small;
+.fa-facebook:hover {
+    color: #10CFFC;    
 }
 
+.fa-instagram:hover {
+    color: #8a3ab9;
+}
+
+.fa-pinterest:hover {
+    color: #E60023;
+}
 /* @media (max-width: 952px){
     #logo img{
       font-size: 30px;
@@ -248,12 +256,14 @@ i:hover {
     nav ul li a{
       font-size: 16px;
     }
-  } */
-  
+  }*/
+
+
       /* media queries */
 
 /* navigation and hero section */
   @media (max-width: 858px){
+
     .checkbtn{
       display: block;
     }
@@ -309,5 +319,12 @@ i:hover {
     .title {
         font-size: 20px;
     }
+}
 
+@media screen and (max-width: 390px) {
+ 
+    /* reduce size of social media icons for smallest screen in dev tools - Samsung Galaxy fold - 280px width */
+    .icons i {
+        font-size: 200%;
+}
 }
