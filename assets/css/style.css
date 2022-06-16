@@ -1,12 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    border: none;
+    box-sizing:border-box;
+    overflow: hidden;
 }
 
+                            /* HOME PAGE  */
 /* navbar and log */
 header{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     width: 100%;
     /* border-bottom: 4px groove; */
     height: 65px;
@@ -206,12 +208,13 @@ p{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: capitalize;
 }
-.button:hover {
+.button:hover, 
+#submit:hover {
     background: rgba(0, 194, 255, 0.8);
     font-size: 17px;
 }
 
-
+/* footer */
 footer {
     height: 30px;
 }
@@ -248,21 +251,122 @@ footer {
 .fa-pinterest:hover {
     color: #E60023;
 }
-/* @media (max-width: 952px){
-    #logo img{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }*/
 
+            /* contact me page */
+
+#contact-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 30px;
+    background: url('../image/pexels-elle-hughes-1660030.jpg');
+    background-size: cover;    
+   
+}
+
+.inside-box {
+    max-width: 850px;
+    height: 72vh;
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 38px;
+}
+
+.form-side {
+    padding: 50px 40px;
+}
+
+.form-side 
+h2 {
+    padding-top: 2rem;
+    /* margin-bottom: -20px; */
+    bottom: 0;
+    transform: translateY(-50%);
+    margin-top: 2rem;
+    padding-bottom: 0.2rem;
+}
+
+.form-side
+h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    height: 2px;
+    width: 50px;
+    background-color: rgba(255, 0, 242, 0.678);
+    margin-top: 2.5rem;
+
+}
+
+.right-side {
+    height: 100%;
+    /* background: url('../image/contact-img.png') no-repeat center;
+    background-size: cover; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('../image/pexels-pixabay-326268.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 3rem;
+    color: #fff;
+}
+
+.right-side
+h2 {
+    padding: 2rem 1rem;
+}
+
+.right-side
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 0;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgba(0, 194, 255, 0.4);
+}
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#submit {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    background: rgba(0, 194, 255, 0.4);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    cursor: pointer;
+    /* margin-top: -2rem; */
+    margin-bottom: 2rem;
+}
+            
 
       /* media queries */
 
 /* navigation and hero section */
-  @media (max-width: 858px){
+  @media (max-width: 858px) {
 
     .checkbtn{
       display: block;
@@ -271,7 +375,7 @@ footer {
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #23d7ffe5;
+      background: #12d4ff;
       top: 80px;
       left: -100%;
       text-align: center;
@@ -321,10 +425,24 @@ footer {
     }
 }
 
-@media screen and (max-width: 390px) {
- 
-    /* reduce size of social media icons for smallest screen in dev tools - Samsung Galaxy fold - 280px width */
-    .icons i {
-        font-size: 200%;
+@media screen and (max-width: 630px){
+    .inside-box {
+        grid-template-columns: 1fr;
+    }
+    
+    .right-side {
+        display: none;
+    }
+
 }
-}
+    
+
+/* @media (max-width: 952px){
+    #logo img{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }*/
