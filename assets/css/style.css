@@ -8,7 +8,7 @@
 /* navbar and log */
 header{
     background-color: #fff;
-    width: 100%;/
+    width: 100%;
     height: 65px;
 }
 
@@ -278,8 +278,8 @@ h2 {
 
 .right-side {
     height: 85vh;
-    background: url('../image/contact-img.png') no-repeat center;
-    background-size: cover;
+    /* background: url('../image/contact-img.png') no-repeat center;
+    background-size: cover; */
     background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../image/pexels-pixabay-326268.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -329,7 +329,54 @@ p {
     cursor: pointer;
     margin-bottom: 2rem;
 }
-            
+
+/* recipes page */
+
+.title {
+    margin-top: 3.5rem;
+    /* padding: 1rem; */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#recipe-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6rem 4rem;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../image/pexels-elle-hughes-1660030.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    margin: 1rem;
+}
+
+.head-3 {
+    color: rgb(84, 199, 248);
+    font-size: 24px;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    /* border-bottom: 3px solid rgb(84, 199, 248); */
+    width: 40%;
+    margin-bottom: 1rem; 
+    padding-right: 0,5rem;
+    text-align: center;
+}
+
+#recipe-container .ingrdient-side ol > li,
+#recipe-container .instruction-side ol > li {
+    padding: 0.3rem;
+}
+
+.ingrdient-side {
+    padding-right: 5rem;
+}
+
 
       /* media queries */
 
@@ -367,7 +414,7 @@ p {
     .hero p {
         font-size: 2rem;
     }
-    .hero span{
+    .hero span {
         font-size: 2.3rem;
     }
 }
@@ -391,6 +438,14 @@ p {
     .title {
         font-size: 20px;
     }
+    /* recipe page */
+    #recipe-container {
+        flex-direction: column;
+    }
+    #recipe-container .instruction-side
+    .head-3 {
+        padding-top: 3.5rem;
+    }
 }
 
 @media screen and (max-width: 630px){
@@ -401,9 +456,9 @@ p {
     .right-side {
         display: none;
     }
-
+/* 
     .form-side
     h2:after {
         display: none;
-    }
+    } */
 }
