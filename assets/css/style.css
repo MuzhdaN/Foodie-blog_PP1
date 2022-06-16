@@ -345,8 +345,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 6rem 4rem;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../image/pexels-elle-hughes-1660030.jpg');
+    padding: 4rem;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/pexels-elle-hughes-1660030.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -355,17 +355,20 @@ p {
 }
 
 .head-3 {
-    color: rgb(84, 199, 248);
+    color: rgb(255, 255, 255);
     font-size: 24px;
     padding: 0.5rem;
     margin-top: 2rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    /* border-bottom: 3px solid rgb(84, 199, 248); */
-    width: 40%;
     margin-bottom: 1rem; 
     padding-right: 0,5rem;
-    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 30%;
+    text-align: start;
+    text-decoration: underline;
+    text-decoration-color: rgb(84, 199, 248);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 5px;
 }
 
 #recipe-container .ingrdient-side ol > li,
@@ -376,6 +379,61 @@ p {
 .ingrdient-side {
     padding-right: 5rem;
 }
+
+/* confirmation page */
+.msg-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../image/bg-thankyou.jpg'); */
+    background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('../image/bg-thankyou.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+.msg-side {
+    text-align: center;
+    padding: 3rem;
+    height: 100%;
+}
+
+.msg-side 
+.msg-success {
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+}
+.msg-side
+p {
+    font-size: 25px;
+    padding-bottom: 7rem;
+    margin: 2rem;
+    color: #fff;
+}
+
+.image-side {
+    max-width: 100%;
+    height: auto;
+    padding-right: 2rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 
 
       /* media queries */
@@ -430,14 +488,17 @@ p {
         align-items: center;
         justify-content: center;
     }
+
     .about-me-text {
         width: 80%;
         margin-top: 0.5rem;
     }
+
     .about-me-text
     .title {
         font-size: 20px;
     }
+
     /* recipe page */
     #recipe-container {
         flex-direction: column;
@@ -445,6 +506,17 @@ p {
     #recipe-container .instruction-side
     .head-3 {
         padding-top: 3.5rem;
+    }
+
+    /* confirmation page */
+    .msg-side 
+    .msg-success {
+        font-size: 25px;
+    }
+
+    .msg-side 
+    p {
+        font-size: 20px;
     }
 }
 
@@ -455,10 +527,19 @@ p {
 
     .right-side {
         display: none;
+    } 
+}
+
+/* confirmation page */
+@media screen and (max-width: 600px){
+    
+    .msg-side 
+    .msg-success {
+        font-size: 22px;
     }
-/* 
-    .form-side
-    h2:after {
-        display: none;
-    } */
+
+    .msg-side 
+    p {
+        font-size: 18px;
+    }
 }
