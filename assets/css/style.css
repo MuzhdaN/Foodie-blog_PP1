@@ -280,7 +280,7 @@ h2 {
     height: 85vh;
     /* background: url('../image/contact-img.png') no-repeat center;
     background-size: cover; */
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../image/pexels-pixabay-326268.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../image/contact-me-container-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -331,27 +331,43 @@ p {
 }
 
 /* recipes page */
-
-.title {
+/* title tag is from home page */
+.title,
+.title-recipe {
     margin-top: 1rem;
-    /* padding: 1rem; */
     text-align: center;
     font-size: 24px;
     font-weight: bold;
 }
 
-#recipe-container {
+.title-recipe {
+    margin-top: 4rem;
+}
+
+.recipe-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: 4rem;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/pexels-elle-hughes-1660030.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
     margin: 1rem;
+    font-weight: bold;
+}
+
+#recipe-1 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/ramen.jpg');
+}
+
+#recipe-2 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/oat.jpg');
+}
+
+#recipe-3 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/poke.jpg');
 }
 
 .head-3 {
@@ -371,8 +387,8 @@ p {
     text-decoration-thickness: 5px;
 }
 
-#recipe-container .ingrdient-side ol > li,
-#recipe-container .instruction-side ol > li {
+.recipe-container .ingrdient-side ol > li,
+.recipe-container .instruction-side ol > li {
     padding: 0.3rem;
 }
 
@@ -500,10 +516,10 @@ p {
     }
 
     /* recipe page */
-    #recipe-container {
+    .recipe-container {
         flex-direction: column;
     }
-    #recipe-container .instruction-side
+    .recipe-container .instruction-side
     .head-3 {
         padding-top: 3.5rem;
     }
