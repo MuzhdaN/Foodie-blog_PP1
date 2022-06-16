@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    overflow: hidden;
 }
 
                             /* HOME PAGE  */
@@ -261,21 +260,17 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 70px 30px;
+    padding: 50px 30px;
     background: url('../image/pexels-elle-hughes-1660030.jpg');
     background-size: cover;    
-   
 }
 
 .inside-box {
     max-width: 850px;
-    height: 72vh;
+    height: 85vh;
     background: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     border-radius: 38px;
 }
 
@@ -287,13 +282,14 @@ footer {
 h2 {
     padding-top: 2rem;
     /* margin-bottom: -20px; */
-    bottom: 0;
-    transform: translateY(-50%);
-    margin-top: 2rem;
-    padding-bottom: 0.2rem;
+    /* bottom: 0;
+    transform: translateY(-50%); */
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
 }
 
-.form-side
+/* .form-side
 h2:after {
     content: '';
     position: absolute;
@@ -301,23 +297,22 @@ h2:after {
     bottom: 0;
     transform: translateX(-50%);
     border-radius: 2px;
-    height: 2px;
+    height: 4.5px;
     width: 50px;
     background-color: rgba(255, 0, 242, 0.678);
-    margin-top: 2.5rem;
-
-}
+} */
 
 .right-side {
-    height: 100%;
-    /* background: url('../image/contact-img.png') no-repeat center;
-    background-size: cover; */
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('../image/pexels-pixabay-326268.jpg');
+    height: 85vh;
+    background: url('../image/contact-img.png') no-repeat center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../image/pexels-pixabay-326268.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 4rem 3rem;
+    padding: 5rem 3rem;
     color: #fff;
+    border-radius: 0 38px 38px 0;
 }
 
 .right-side
@@ -347,7 +342,7 @@ p {
     border: 2px solid rgba(0, 194, 255, 0.4);
 }
 .field:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
 #submit {
@@ -429,8 +424,20 @@ p {
     .inside-box {
         grid-template-columns: 1fr;
     }
-    
+
     .right-side {
+        display: none;
+    }
+    /* .form-side 
+    h2 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        text-transform: capitalize;
+        color: red;
+    } */
+
+    .form-side
+    h2:after {
         display: none;
     }
 
