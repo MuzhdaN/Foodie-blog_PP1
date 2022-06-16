@@ -4,38 +4,30 @@
     box-sizing:border-box;
 }
 
-                            /* HOME PAGE  */
+     /* HOME PAGE  */
 /* navbar and log */
 header{
     background-color: #fff;
-    width: 100%;
-    /* border-bottom: 4px groove; */
+    width: 100%;/
     height: 65px;
-    /* height: 100vh;
-    
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../image/hero-pic.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-    
 }
+
 #logo, nav {
     line-height: 30px;
     display: inline-block;
 }
 
-nav{
+nav {
     float: right;
     margin-right: 3rem;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 20px 5px;
- 
 }
-li a{
+li a {
     /* padding: 25px 10px; */
     margin: 2rem 1.5rem;
     text-decoration: none;
@@ -44,11 +36,11 @@ li a{
     text-align: center;
 }
 
-li a:hover{
+li a:hover {
     text-transform: uppercase;
 }
 
-#logo{
+#logo {
     margin: -1.5rem;
 }
 
@@ -145,7 +137,7 @@ img {
 
 /* recipe section */
 
-#recipe-section{
+#recipe-section {
     background: url(/assets/image/recipe-section-bg.png) no-repeat center center fixed; 
     background-size: cover;
     margin-top: 3rem
@@ -156,19 +148,18 @@ h2{
     padding-top: 2rem;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem;
 }
 
-.card{
+.card {
     width: 270px;
     height: 400px;
     margin: 10px;
     border-radius: 15px;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     background-color: #fff;
 }
 
@@ -176,7 +167,6 @@ h2{
 img{
     height: 50%;
     width: 100%;
-    /* margin-bottom: 10px; */
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
@@ -251,7 +241,7 @@ footer {
     color: #E60023;
 }
 
-            /* contact me page */
+ /* contact me page */
 
 #contact-box {
     height: 100%;
@@ -281,26 +271,10 @@ footer {
 .form-side 
 h2 {
     padding-top: 2rem;
-    /* margin-bottom: -20px; */
-    /* bottom: 0;
-    transform: translateY(-50%); */
     margin-top: -2rem;
     padding-bottom: 2rem;
     text-transform: capitalize;
 }
-
-/* .form-side
-h2:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    border-radius: 2px;
-    height: 4.5px;
-    width: 50px;
-    background-color: rgba(255, 0, 242, 0.678);
-} */
 
 .right-side {
     height: 85vh;
@@ -341,6 +315,7 @@ p {
     background-color: #fff;
     border: 2px solid rgba(0, 194, 255, 0.4);
 }
+
 .field:hover {
     background-color: rgba(0, 0, 0, 0.07);
 }
@@ -351,9 +326,7 @@ p {
     border: none;
     font-size: 1rem;
     background: rgba(0, 194, 255, 0.4);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     cursor: pointer;
-    /* margin-top: -2rem; */
     margin-bottom: 2rem;
 }
             
@@ -428,28 +401,9 @@ p {
     .right-side {
         display: none;
     }
-    /* .form-side 
-    h2 {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        text-transform: capitalize;
-        color: red;
-    } */
 
     .form-side
     h2:after {
         display: none;
     }
-
 }
-    
-
-/* @media (max-width: 952px){
-    #logo img{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }*/
