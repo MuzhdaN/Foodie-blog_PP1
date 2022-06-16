@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
      /* HOME PAGE  */
@@ -251,7 +253,7 @@ footer {
     align-items: center;
     text-align: center;
     padding: 50px 30px;
-    background: url('../image/pexels-elle-hughes-1660030.jpg');
+    background: url('../image/contact-bg.jpg');
     background-size: cover;    
 }
 
@@ -355,7 +357,8 @@ p {
     background-position: center;
     color: #fff;
     margin: 1rem;
-    font-weight: bold;
+    line-height: 120%;
+    letter-spacing: 2px;
 }
 
 #recipe-1 {
@@ -416,6 +419,7 @@ p {
     text-align: center;
     padding: 3rem;
     height: 100%;
+    line
 }
 
 .msg-side 
