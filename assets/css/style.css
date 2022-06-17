@@ -76,7 +76,8 @@ li a:hover {
     background-position: center;
 }
 
-.hero p {
+.hero 
+h1 {
     font-size: 3rem;
     font-weight: 800;
 
@@ -90,7 +91,7 @@ span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    color: transparent;
     text-transform: uppercase;
 }
 
@@ -379,7 +380,7 @@ p {
     padding: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem; 
-    padding-right: 0,5rem;
+    padding-right: 0.5rem;
     font-weight: bold;
     text-transform: capitalize;
     width: 30%;
@@ -489,7 +490,8 @@ p {
     #check:checked ~ nav ul{
       left: 0;
     }
-    .hero p {
+    .hero 
+    h1 {
         font-size: 2rem;
     }
     .hero span {
