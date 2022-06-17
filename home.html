@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Blog for foodie people">
     <meta name="keywords" content="foodie, food blog, food, blog, recipe, food recipe, recipes">
     
     <!-- favicon links -->
@@ -11,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
 
     <!-- css link -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Food Blog</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
        <i class="fas fa-bars"></i>
        </label>
         <div id="logo">
-            <a href="#"> <img src="./assets/image/logo.png" alt="logo" width="280" height="120"></a>
+            <a href="#"> <img src="./assets/image/logo.webp" alt="logo" width="280" height="120"></a>
         </div>
         <nav>
             <ul>
@@ -57,7 +58,7 @@
             </p>
         </div>
         <div class="about-me-image">
-            <img src="./assets/image/about-me-image.png" alt="">
+            <img src="./assets/image/owner-img.webp" alt="image of a girl cooking in the kitchen">
         </div>
     </section>
 
@@ -65,7 +66,26 @@
         <h2>My Favourite recipes</h2>
         <div class="container">
             <div class="card">
-                <img src="./assets/image/ramen.jpg" alt="two bowls of Ramen">
+                <img 
+                    sizes="(max-width: 1400px) 100vw, 1400px"
+                    srcset="/assets/image/ramen/ramen_mwvupo_c_scale,w_200.jpg,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_200.jpg 200w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_362.jpg 362w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_487.jpg 487w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_589.jpg 589w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_681.jpg 681w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_913.jpg 913w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_888.jpg 888w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_906.jpg 906w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_912.jpg 912w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_1167.jpg 1167w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_1249.jpg 1249w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_1308.jpg 1308w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_1381.jpg 1381w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_1390.jpg 1390w,
+                    /assets/image/ramen/ramen_mwvupo_c_scale,w_1400.jpg 1400w"
+                    src="/assets/image/ramen/ramen_mwvupo_c_scale,w_1400.jpg"
+                     alt="two bowls of Ramen">
                 <div class="card-contents">
                     <h3>Ramen</h3>
                     <p>
@@ -77,24 +97,39 @@
             </div>
 
             <div id="card-img2" class="card">
-                <img src="./assets/image/oat.jpg" alt="oats in a two bowl filled with fruits and yogurt above it">
+                <img src="./assets/image/oats1.webp" alt="">
                 <div class="card-contents">
                     <h3>Oats</h3>
                     <p>
                         Oats are an incredibly healthy whole grain and a great
-                         source of many vitamins, minerals, and antioxidants. 
+                         source of many vitamins, minerals. 
                     </p>
                     <button class="button" onclick="location.href='recipes.html'">read more</button>
                 </div>
             </div>
 
             <div class="card">
-                <img src="./assets/image/poke.jpg" alt="a bowl of raw fish">
+                <img 
+                    sizes="(max-width: 1400px) 100vw, 1400px"
+                    srcset="
+                    assets/image/poke/poke_pn0vnr_c_scale,w_200.jpg 200w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_419.jpg 419w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_587.jpg 587w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_720.jpg 720w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_824.jpg 824w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_993.jpg 993w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_1065.jpg 1065w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_1216.jpg 1216w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_1276.jpg 1276w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_1354.jpg 1354w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_1398.jpg 1398w,
+                    assets/image/poke/poke_pn0vnr_c_scale,w_1400.jpg 1400w"
+                    src="assets/image/poke/poke_pn0vnr_c_scale,w_1400.jpg"
+                    alt="a bowl of raw fish with rice">
                 <div class="card-contents">
                     <h3>Poke</h3>
                     <p>
-                        Poke is diced raw fish served as an appetizer or a
-                        is one of the main dishes of Native Hawaiian cuisine
+                        Poke is diced raw fish served is one of the main dishes of Native Hawaiian cuisine
                     </p>
                     <button class="button" onclick="location.href='recipes.html'">read more</button>
                 </div>
