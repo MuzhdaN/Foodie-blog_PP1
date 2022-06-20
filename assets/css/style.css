@@ -140,7 +140,7 @@ img {
 
 /* recipe section */
 #recipe-section {
-    background: url(/assets/image/recipe-bg-home.webp) no-repeat center center fixed; 
+    background: url(assets/image/recipe-bg-home.webp) no-repeat center center fixed; 
     background-size: cover;
     margin-top: 3rem
 }
