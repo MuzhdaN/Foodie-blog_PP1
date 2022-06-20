@@ -112,7 +112,7 @@ Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
 
 
 
-## Future Feature
+## Future Features
 
 - Newsletter form
 - Add more recipes section
