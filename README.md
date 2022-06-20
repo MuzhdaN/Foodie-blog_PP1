@@ -4,8 +4,8 @@
 
  Foodie is a food blog or website. The project has been build using html and CSS. This is a personal blog and the owner wants to share her experiences or experts in food with others. Through this website the owner shares her personal food recipes and want the visitors of the website to know about them and contact her regrading food recipe questions or suggestions through contact me page. 
  
-Visit the live [website](https://aoifesmith.github.io/evanandanna/).
-  ![Evanandanna responsive Design Layouts](docs/readme/planning/amiresponsive.png)
+Visit the live [website].
+  ![ responsive Design Layouts]
 
 ## Table of Contents
   * [Purpose of the project](#purpose-of-the-project)
@@ -24,9 +24,9 @@ Visit the live [website](https://aoifesmith.github.io/evanandanna/).
       
   *  [Deployment](#deployment)
   *  [Credits](#credits)
-      *  [Imagery](#imagery)
+      * [Images](#images)
+      * [Contents](#contents)
       * [Code](#code)
-      *  [Acknowledgements](#acknowledgements)
 
 
 -----
@@ -136,10 +136,10 @@ Visit the live [website](https://aoifesmith.github.io/evanandanna/).
   As these were the first prototype. There are some changes between them and the real website. For instance, images and some other slight changes that the developer changed while coding. 
   <details> <summary> Wireframes / prototypes </summary>
 
-  ![homepage wireframe](/assets/readme-images/home-wireframe.PNG)
-  ![recipes](/assets/readme-images/recipes-wireframe.PNG)
-  ![contact](/assets/readme-images/contact-wireframe.PNG)
-  ![confirmation](/assets/readme-images/thankyou-wireframe.PNG)
+  ![home page](/assets/readme-images/wireframes/home-wireframe.png)
+  ![recipes page](/assets/readme-images/wireframes/receipe-wireframe.png)
+  ![contact page](/assets/readme-images/wireframes/contact-wireframe.png)
+  ![confirmation page](/assets/readme-images/wireframes/confirmation-page.png)
 
   </details>
 
@@ -189,34 +189,34 @@ Visit the live [website](https://aoifesmith.github.io/evanandanna/).
       To analyze the performance, bes practice, accessibility annd SEO for the each page in the website the lighthouse within dev tools was used. 
 
     - **Home page**
-      - Desktop [Lighthouse Desktop Report](/assets/testing/home.html-lighthouse-report.pdf)
-        ![Home page results](/assets/testing/home-page-Desktop-result.PNG)
+      - Desktop [Full Report] (/assets/testing/docs-lighthouse-reports/home-lighthouse-report-desktop.pdf)
+        ![Home page results](/assets/testing/home-lighthouse-report-desktop.pdf)
       
-      - Mobile [Lighthouse Mobile Report](/assets/testing/Recipes-LightHouse-Report-Mobile.pdf)
+      - Mobile [Full Report](/assets/testing/docs-lighthouse-reports/home-lighthouse-reports-mobile.pdf)
         - Most of the performance marks were cut due to 'Eliminate render-blocking resources' warning. As for this project compressing css file has not been recommneded. Therefore, I did not change the css file.
 
          ![results](/assets/testing/homepage-lighthouse-result-mobile.PNG)
 
 
     - **Recipes page**
-      - Desktop [Lighthouse Desktop Report](/assets/testing/recipes-lighthouse-reports-Desktop.pdf)
+      - Desktop [Full Report](/assets/testing/docs-lighthouse-reports/recipes-lighthouse-reports-Desktop.pdf)
         ![Desktop-result](/assets/testing/recipes-results-desktop-lighthouse.PNG)
       
       
-      - Mobile [Lighthouse Mobile Report](/assets/testing/Recipes-LightHouse-Report-Mobile.pdf)
+      - Mobile [Full Report](/assets/testing/docs-lighthouse-reports/Recipes-LightHouse-Report-Mobile.pdf)
         ![results](/assets/testing/Recipes-LightHouse-result-Mobile.PNG)
 
 
     - **Contact me page**
-      - Desktop [Lighthouse Desktop Report](/assets/testing/Contact-me-Lighthouse-report-Desktop.pdf)
+      - Desktop [Full Report](/assets/testing/docs-lighthouse-reports/Contact-me-Lighthouse-report-Desktop.pdf)
         ![Contact me desktop result](/assets/testing/Contact-lighthouse-result-Desktop.PNG)
 
-      - Mobile [Lighthouse Mobile Report](/testing/Contact-Lighthouse-Report-Mobile.pdf)
+      - Mobile [Full Report](/assets/testing/docs-lighthouse-reports/Contact-Lighthouse-Report-Mobile.pdf)
         ![Contact me mobile result](/assets/testing/Contact-lighthouse-result-Mobile.PNG)
 
 
     - **Confirmation page**
-      - Desktop [Lighthouse Report](/assets/testing/Confirmation-lighthouse-report-Desktop.html)
+      - Desktop [Full Report](/assets/testing/docs-lighthouse-reports/Confirmation-Page-Lighthouse-Report.pdf)
         ![Confirmation desktop result](/assets/testing/confirmation-lighthouse-result-desktop.PNG)
 
 
@@ -263,7 +263,7 @@ Visit the live [website](https://aoifesmith.github.io/evanandanna/).
   
   ### Contents
   - [Recipe website](https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/)
-  - [Read ME deployment content](https://github.com/Code-Institute-Solutions/readme-template)
+  - [Read me deployment content](https://github.com/Code-Institute-Solutions/readme-template)
   
   ### Code
   - A part of footer's code was taken from [Love Running Code Project](https://learn.codeinstitute.net/ci_program/diplomainfullstacksoftwarecommoncurriculum).
