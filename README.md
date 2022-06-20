@@ -1,108 +1,270 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Foodie Blog
 
-Welcome MuzhdaN,
+## Purpose of the project
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+ Foodie is a food blog or website. The project has been build using html and CSS. This is a personal blog and the owner wants to share her experiences or experts in food with others. Through this website the owner shares her personal food recipes and want the visitors of the website to know about them and contact her regrading food recipe questions or suggestions through contact me page. 
+ 
+Visit the live [website](https://aoifesmith.github.io/evanandanna/).
+  ![Evanandanna responsive Design Layouts](docs/readme/planning/amiresponsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Contents
+  * [Purpose of the project](#purpose-of-the-project)
+  * [User Stories](#user-stories)
+  * [Features](#features)
+  * [Future Features](#future-features)
+  * [Typography and color scheme](#typography-and-color-scheme)
+  * [Wireframes](#wireframes)
+  * [Technology](#technology)
+  *  [Testing](#testing)
+      * [Validator Testing](#validator-testing)
+      * [Accessibility](#accessibility)
+      * [Manual Testing](#manual-testing)
+      * [Supported Screens and Browsers](supported-screens-and-browsers)
+      * [Fixed Bugs](#fixed-bugs)
+      
+  *  [Deployment](#deployment)
+  *  [Credits](#credits)
+      *  [Imagery](#imagery)
+      * [Code](#code)
+      *  [Acknowledgements](#acknowledgements)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-----
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## User Stories
+- As a visiting user, I would like to know more about the owner of this blog/website.
+- As a visiting user, I would like to contact the owner for business enquiries
+- As visiting user, I would like to view more recipes by the owner
+- As a visiting user, I would like to view recipes instructions in a separate page.
+- As a visiting user, I would like to view all recipes within one page.
+- As a visiting user, I would like to have a confirmation message after submitting the queries form in the contact me page.
+- As a visiting user, I would like to find the social media accounts of this website/blog.
+- As a visiting user, I would like to open social media links in to another tab.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Features
 
-A blue button should appear to click: _Make Public_,
+### All pages - Header and Footer sections:
+  All pages have a header and footer. 
 
-Another blue button should appear to click: _Open Browser_.
+  * **Header** - The header contains the logo in the left side and a side navbar in the right side.This is located at the top of every page. 
+       
+       ![Header](/assets/readme-images/header.PNG)
+    
+ 
+     * **Logo** - The logo has the home page hyperlink that returns the user to the home page. The logo has been created in an online software. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+     * **Nav Bar** - The nav bar has the links to the different sections of home page and pages of the website.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  * **Footer** - The footer exists on all pages. The footer consists of social media links at the center of it.
+      ![footer](/assets/readme-images/footer-section.PNG)
+  
+  ### Home page (home.html):
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+   Including the header and footer, the home page also contains the hero image with welcome text, About me section & Favourite recipe section. 
 
-------
+  * **Hero image** this is the a landing section of home page. It has a simple text with a hero image.
+      ![Hero section](/assets/readme-images/ladning-section.PNG)
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  * **About me section** This section comes after hero image. This section shows the image of the owner of this blog and gives a detail information about her, by using 1st person.  
+     ![About-me-section](/assets/readme-images/about-section.PNG)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  * **My favourite Recipes section** This section has three chosen or favourite recipes of the owner. Each recipe has a container with short information about the food and has a button. By clicking this 'read more' button, the user will be directed to the recipe isntructions' section which is located in to 'recipes' page. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+      ![favourite-recipes-section](/assets/readme-images/fav-recipe-section.PNG)  
+ 
+    
+  ### Recipes page (recipes.html):
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+   - Apart from header and footer this page has three sections that contains the instrcutions of each recipe from home page. 
+   - The design and HTML strcuture is the same for all the three sections apart from contents. 
+   - Each section has two parts, ingrdients and instructions of how to make the food. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+      <details> <summary>Recipes page Image</summary>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+      ![first-section](/assets/readme-images/ramen-section.PNG)  
+      ![second-section](/assets/readme-images/oats-section.PNG)
+      ![third-section](/assets/readme-images/poke.PNG)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+      </details>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Contact-me page (contact-me.html):
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  Including (header and footer) this page has a container which has two parts.
+   1. Form part/
+        The user can send their inquires, suggestions or comments to the owner of this blog.
+   2. Message to the user
+        By reading this text the user will understand the objective of this form. This will help the user to fill out the form effectivetly. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+      ![contact](/assets/readme-images/contact-section.PNG)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Confirmation page (confirmation.html)
+  - This page has simple thank you image in the right side and a recived message in the left side.
+  - The user will be directed to this image after submmiting the contact me form. 
+  - This page has been created so the user would know that their form details has been sent successfully.  
+  - If the user tries to submit the form empty, it will give a message to fill the form fields. All the form fields should be filled to be able to submit it.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    ![confirmation-page](/assets/readme-images/thankyou.PNG)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
+## Future Feature
 
-**Why have you added this script?**
+- Newsletter form
+- Add more recipes section
+- View recipe list
+- View video tutorials for recipes
+- View photo gallery
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+## Typography and color scheme
+  ### Typography
+  - The following google font was used for the website.
+     - `'Roboto', sans-serif;`
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  ### Color Scheme
+  - The website uses the following colors that has also been used in the logo.
+  - The colors were used in different types as hex and rgba.
+  ![colors](/assets/testing/colors.PNG)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Wireframes
+  As these were the first prototype. There are some changes between them and the real website. For instance, images and some other slight changes that the developer changed while coding. 
+  <details> <summary> Wireframes / prototypes </summary>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  ![homepage wireframe](/assets/readme-images/home-wireframe.PNG)
+  ![recipes](/assets/readme-images/recipes-wireframe.PNG)
+  ![contact](/assets/readme-images/contact-wireframe.PNG)
+  ![confirmation](/assets/readme-images/thankyou-wireframe.PNG)
 
-**So….?**
+  </details>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+## Technology
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+  - HTML 
+  - CSS
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+ ### Programs that were used:
+  - Figma: create the prototype / wireframes.
+  - Git
+  - Github
+  - Gitpod
+  - Google Fonts
+  - Font Awsome
+  - Favicon
+  - Am I responsive
+  - ezgif.com: Changed jpg to webp
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+## Testing
+*  ## Validator Testing
+    The W3c validator was used to validated the each HTML page sepeartly. Also it was used to validate the style.css page.
 
-Happy coding!
+ - **W3C Jigsaw CSS** 
+    ![w3c css validation](/assets/testing/w3s-css-validation.PNG)
+
+ - **W3C HTML Validation**
+
+    - HTML validation of Home page 
+      ![Home page validation result](/assets/testing/html-validatation-checked.PNG)
+
+    - HTML validation of Recipes page 
+      ![recipes-page-validation-result](/assets/testing/w3s-recipes-html-validation.PNG)
+
+    - HTML validation of Contact-me page
+      ![contact page validation result](/assets/testing/w3s-contact-me-html-validation.PNG)
+
+    - HTML validation of Confirmation page
+      ![confirmation page validation result](/assets/testing/w3s-confirmation-html-validation.PNG)
+
+
+
+ *  ## Accessibility Testing (Lighthouse - Dev Tools)
+      To analyze the performance, bes practice, accessibility annd SEO for the each page in the website the lighthouse within dev tools was used. 
+
+    - **Home page**
+      - Desktop [Lighthouse Desktop Report](/assets/testing/home.html-lighthouse-report.pdf)
+        ![Home page results](/assets/testing/home-page-Desktop-result.PNG)
+      
+      - Mobile [Lighthouse Mobile Report](/assets/testing/Recipes-LightHouse-Report-Mobile.pdf)
+        - Most of the performance marks were cut due to 'Eliminate render-blocking resources' warning. As for this project compressing css file has not been recommneded. Therefore, I did not change the css file.
+
+         ![results](/assets/testing/homepage-lighthouse-result-mobile.PNG)
+
+
+    - **Recipes page**
+      - Desktop [Lighthouse Desktop Report](/assets/testing/recipes-lighthouse-reports-Desktop.pdf)
+        ![Desktop-result](/assets/testing/recipes-results-desktop-lighthouse.PNG)
+      
+      
+      - Mobile [Lighthouse Mobile Report](/assets/testing/Recipes-LightHouse-Report-Mobile.pdf)
+        ![results](/assets/testing/Recipes-LightHouse-result-Mobile.PNG)
+
+
+    - **Contact me page**
+      - Desktop [Lighthouse Desktop Report](/assets/testing/Contact-me-Lighthouse-report-Desktop.pdf)
+        ![Contact me desktop result](/assets/testing/Contact-lighthouse-result-Desktop.PNG)
+
+      - Mobile [Lighthouse Mobile Report](/testing/Contact-Lighthouse-Report-Mobile.pdf)
+        ![Contact me mobile result](/assets/testing/Contact-lighthouse-result-Mobile.PNG)
+
+
+    - **Confirmation page**
+      - Desktop [Lighthouse Report](/assets/testing/Confirmation-lighthouse-report-Desktop.html)
+        ![Confirmation desktop result](/assets/testing/confirmation-lighthouse-result-desktop.PNG)
+
+
+  ## Manual Testing
+  - This site was manually checked after uploading each feature. The features were interactive and worked successfully. 
+
+  ## Supported Screens and Browsers
+  - This website can work properly on Chrome, Firefox, Safari. 
+
+
+  ## fixed bugs
+
+   - The website wasn't loading style.css page and was giving an error. The error was about favicon(this little icon that shows in the browser tab). To fix it, favicon was added in the header.
+
+   - W3S HTML validator found no error in the home page, but a warning,  "Section lacks heading" in all the sections of the page. Two approaches were taken to solve this issue
+       1. remove section tag
+       2. add h2 or h1 inside section tag
+
+   - W3S CSS validator found parse error and in the Text-Area section. A semicolon was missing in a line of code. Therefore, by adding semicolon this issue was fixed. 
+
+   - W3S HTML validator found another error, "Bad value for attribute srcset on element img: No width specified for image 'ramen' ". 
+        - Fixed this issue by giving width to the image.
+
+   - W3S CSS validator found another error "the value 'text' is deprecated". An unused line of code with no semicolon was found in the css file. By removing it this error was fixed. 
+
+   - While checking the perofmance of the website in the lighthouse dev tools the following error occured:
+        - Document does not have a meta description. Fixed this by adding meta description in the header of recipe page. 
+    
+
+
+## Deployment 
+  This website was developed in Gitpod. It was deployed on github. 
+
+  - The site was deployed to GitHub pages. The steps to deploy are as follows:
+    - In the GitHub repository, navigate to the Settings tab
+    - From the source section drop-down menu, select the Master Branch
+    - Once the master branch has been selected, the page will be automatically    refreshed with a detailed ribbon display to indicate the successful deployment.
+
+## Credits
+  ### Images
+  - [unsplash](https://unsplash.com/)
+  - [pexels](https://www.pexels.com/)
+  - Logo has been created within a free source software
+  
+  ### Contents
+  - [Recipe website](https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/)
+  - [Read ME deployment content](https://github.com/Code-Institute-Solutions/readme-template)
+  
+  ### Code
+  - A part of footer's code was taken from [Love Running Code Project](https://learn.codeinstitute.net/ci_program/diplomainfullstacksoftwarecommoncurriculum).
+
