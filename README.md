@@ -4,8 +4,8 @@
 
  Foodie is a food blog or website. The project has been build using html and CSS. This is a personal blog and the owner wants to share her experiences or experts in food with others. Through this website the owner shares her personal food recipes and want the visitors of the website to know about them and contact her regrading food recipe questions or suggestions through contact me page. 
  
-Visit the live [website].
-  ![ responsive Design Layouts]
+Visit the live [website](https://muzhdan.github.io/Foodie-blog_PP1/).
+  ![responsive Design Layouts](/assets/image/responsive-template.PNG)
 
 ## Table of Contents
   * [Purpose of the project](#purpose-of-the-project)
@@ -19,7 +19,7 @@ Visit the live [website].
       * [Validator Testing](#validator-testing)
       * [Accessibility Testing ](#accessibility-testing )
       * [Manual Testing](#manual-testing)
-      * [Supported Screens and Browsers](supported-screens-and-browsers)
+      * [Supported Screens and Browsers](#supported-screens-and-browsers)
       * [Fixed Bugs](#fixed-bugs)
   *  [Deployment](#deployment)
   *  [Credits](#credits)
@@ -243,7 +243,8 @@ Visit the live [website].
 
    - While checking the perofmance of the website in the lighthouse dev tools the following error occured:
         - Document does not have a meta description. Fixed this by adding meta description in the header of recipe page. 
-    
+   
+   - While deploying the website in the github pages, Readme page would appear as deafult page and the css properties wouldn't apear. Therefore, the home.html name was changed to index.html to solve one part of this issue. Also, the link path for style.css was changed from absolute to relative. 
 
 
 ## Deployment 
