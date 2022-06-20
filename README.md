@@ -21,7 +21,6 @@ Visit the live [website].
       * [Manual Testing](#manual-testing)
       * [Supported Screens and Browsers](supported-screens-and-browsers)
       * [Fixed Bugs](#fixed-bugs)
-      
   *  [Deployment](#deployment)
   *  [Credits](#credits)
       * [Images](#images)
@@ -190,7 +189,7 @@ Visit the live [website].
 
     - **Home page**
       - Desktop [Full Report](/assets/testing/docs-lighthouse-reports/home-lighthouse-report-desktop.pdf)
-        ![Home page results](/assets/testing/home-lighthouse-report-desktop.pdf)
+        ![Home page results](/assets/testing/home-page-Desktop-result.PNG)
       
       - Mobile [Full Report](/assets/testing/docs-lighthouse-reports/home-lighthouse-reports-mobile.pdf)
         - Most of the performance marks were cut due to 'Eliminate render-blocking resources' warning. As for this project compressing css file has not been recommneded. Therefore, I did not change the css file.
