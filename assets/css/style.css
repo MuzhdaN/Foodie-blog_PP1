@@ -6,9 +6,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-     /* HOME PAGE  */
+/* HOME PAGE  */
 /* navbar and log */
-header{
+header {
     background-color: #fff;
     width: 100%;
     height: 65px;
@@ -29,6 +29,7 @@ nav ul li {
     display: inline-block;
     padding: 20px 5px;
 }
+
 li a {
     margin: 2rem 1.5rem;
     text-decoration: none;
@@ -54,7 +55,7 @@ li a:hover {
     cursor: pointer;
     display: none;
   }
-  #check{
+  #check {
     display: none;
   }
   
@@ -81,6 +82,7 @@ h1 {
     font-weight: 800;
 
 }
+
 span {
     line-height: 56px;
     font-weight: 800;
@@ -136,9 +138,7 @@ img {
     height: auto;
 }
 
-
 /* recipe section */
-
 #recipe-section {
     background: url(/assets/image/recipe-bg-home.webp) no-repeat center center fixed; 
     background-size: cover;
@@ -187,7 +187,7 @@ p{
     padding: 0.9rem;
 }
 
-.button{
+.button {
     display: inline-block;
     cursor: pointer;
     width: 50%;
@@ -199,6 +199,7 @@ p{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: capitalize;
 }
+
 .button:hover, 
 #submit:hover {
     background: rgba(0, 194, 255, 0.8);
@@ -252,7 +253,7 @@ footer {
     align-items: center;
     text-align: center;
     padding: 50px 30px;
-    background: url('../image/contact-bg.jpg');
+    background: url('../image/contact-bg.webp');
     background-size: cover;    
 }
 
@@ -279,7 +280,7 @@ h2 {
 
 .right-side {
     height: 85vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../image/contact-me-container-img.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../image/contact-me-container-img.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -355,19 +356,19 @@ p {
     color: #fff;
     margin: 1rem;
     line-height: 120%;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 }
 
 #recipe-1 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/ramen.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/ramen1.webp');
 }
 
 #recipe-2 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/oat.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/oats1.webp');
 }
 
 #recipe-3 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/poke.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/poke.webp');
 }
 
 .head-3 {
@@ -389,7 +390,7 @@ p {
 
 .recipe-container .ingrdient-side ol > li,
 .recipe-container .instruction-side ol > li {
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 
 .ingrdient-side {
@@ -404,7 +405,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('../image/bg-thankyou.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url('../image/bg-thankyou.webp');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 4rem;
@@ -420,17 +421,19 @@ p {
 .msg-side 
 .msg-success {
     padding: 1rem;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
-    padding-top: 5rem;
+    padding-top: 2rem;
     margin-bottom: 1rem;
 }
+
 .msg-side
 p {
-    font-size: 25px;
-    padding-bottom: 7rem;
+    font-size: 22px;
+    padding-bottom: 2rem;
     margin: 2rem;
     color: #fff;
+    font-weight: 400;
 }
 
 .image-side {
@@ -446,10 +449,7 @@ p {
     height: auto;
 }
 
-
-
       /* media queries */
-
 /* navigation and hero section */
   @media (max-width: 858px) {
 
@@ -548,11 +548,16 @@ p {
     
     .msg-side 
     .msg-success {
-        font-size: 22px;
+        font-size: 20px;
+        text-align: center;
     }
 
     .msg-side 
     p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .image-side img {
+        display: none;
     }
 }
