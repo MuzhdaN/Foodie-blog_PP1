@@ -17,7 +17,7 @@ Visit the live [website].
   * [Technology](#technology)
   *  [Testing](#testing)
       * [Validator Testing](#validator-testing)
-      * [Accessibility](#accessibility)
+      * [Accessibility Testing ](#accessibility-testing )
       * [Manual Testing](#manual-testing)
       * [Supported Screens and Browsers](supported-screens-and-browsers)
       * [Fixed Bugs](#fixed-bugs)
@@ -185,11 +185,11 @@ Visit the live [website].
 
 
 
- *  ## Accessibility Testing (Lighthouse - Dev Tools)
+ *  ## Accessibility Testing 
       To analyze the performance, bes practice, accessibility annd SEO for the each page in the website the lighthouse within dev tools was used. 
 
     - **Home page**
-      - Desktop [Full Report] (/assets/testing/docs-lighthouse-reports/home-lighthouse-report-desktop.pdf)
+      - Desktop [Full Report](/assets/testing/docs-lighthouse-reports/home-lighthouse-report-desktop.pdf)
         ![Home page results](/assets/testing/home-lighthouse-report-desktop.pdf)
       
       - Mobile [Full Report](/assets/testing/docs-lighthouse-reports/home-lighthouse-reports-mobile.pdf)
