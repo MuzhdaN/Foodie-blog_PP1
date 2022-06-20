@@ -60,7 +60,7 @@ Visit the live [website].
   * **Footer** - The footer exists on all pages. The footer consists of social media links at the center of it.
       ![footer](/assets/readme-images/footer-section.PNG)
   
-  ### Home page (home.html):
+  ### Home page (index.html):
 
    Including the header and footer, the home page also contains the hero image with welcome text, About me section & Favourite recipe section. 
 
